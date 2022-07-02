@@ -1,0 +1,42 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homenav {
+    height: 60px;
+    background-color: rgb(172, 255, 154);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+
+}
+
+.homemain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 45px;
+    margin-top: 60px;
+    width: 70%;
+    box-shadow: 2px 2px 4px rgb(199, 199, 199);
+}
+
+
+
+.homemain h1 {
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgb(172, 255, 154);
+}
+
+.homemain h1:hover {
+    background-color: rgb(126, 234, 102);
+}

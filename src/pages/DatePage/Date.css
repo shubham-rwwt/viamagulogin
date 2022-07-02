@@ -1,0 +1,38 @@
+.dateandtime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cont {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.form input {
+    width: 14rem;
+    height: 3rem;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+}
+
+.cont span {
+    align-items: center;
+    font-size: 20px;
+}
+
+.cont p {
+
+    color: gray;
+}

@@ -1,0 +1,111 @@
+.video {
+    background-color: rgb(59, 59, 59);
+    height: 100vh;
+    color: white;
+}
+
+.videonav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 18px;
+    height: 58px;
+    background-color: rgb(131, 132, 132);
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.moreVideos {
+    width: 60%;
+    background-color: rgb(90, 90, 90);
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    opacity: 0.2;
+    transition: 0.4s;
+}
+
+.moreVideos:hover {
+    opacity: 1;
+}
+
+.vidcircle {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(129, 130, 130);
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.vidcircle img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    transition: all .4s ease-in-out;
+
+}
+
+.vidcircle img:hover {
+    transform: scale(1.5);
+
+}
+
+.btns {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.btns div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+}
+
+.carousel {
+    height: 100px;
+    background-color: aqua;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 804px) {
+    .moreVideos {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 652px) {
+    .moreVideos {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 419px) {
+    .moreVideos {
+        width: 80%;
+    }
+
+    .vidcircle {
+        height: 60px;
+        width: 60px;
+    }
+}
