@@ -1,53 +1,140 @@
 .dateandtime {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 8rem;
-
+    align-items: center;
+    margin-top: 12rem;
 }
 
-.pickerbody {
-    width: 30%;
+.dateandtimediv {
+    background-color: rgb(64, 124, 255);
+    padding: 56px;
+    width: 40%;
+    border-radius: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 18px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgb(179, 179, 179);
-    background-color: rgb(255, 251, 139);
+    gap: 40px;
 }
 
-.cont {
+.duration {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 5rem;
-    gap: 30px;
+    gap: 12px;
+    align-items: center;
 }
 
-label {
-    font-size: 20px;
+.duration label {
+
+    color: white;
+    font-size: 18px;
+
 }
 
-.dur input {
+.duration input {
+    height: 2.5rem;
     width: 14rem;
-    height: 3rem;
-    margin-left: 20px;
     border: none;
     outline: none;
-    border-bottom: 1px solid gray;
-    font-size: 16px;
-    background-color: rgb(255, 254, 225);
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 
-.cont span {
+.datetimepicker {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    font-size: 20px;
 }
 
-.cont p {
+.cont :nth-child(1) {
+    color: rgb(255, 255, 255);
+    margin-bottom: 8px;
 
-    color: gray;
+}
+
+.cont .date {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont :nth-child(2) :nth-child(1) {
+    color: black;
+    height: 2.5rem;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.btn button {
+    width: 24%;
+    height: 2.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+
+@media only screen and (max-width: 1375px) {
+    .dateandtimediv {
+
+        width: 50%;
+
+    }
+}
+
+@media only screen and (max-width: 1061px) {
+    .dateandtimediv {
+
+        width: 60%;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .dateandtimediv {
+
+        width: 80%;
+
+    }
+}
+
+@media only screen and (max-width: 643px) {
+    .dateandtimediv {
+
+        width: 96%;
+
+        padding: 56px 12px;
+    }
+}
+
+@media only screen and (max-width: 643px) {
+    .dateandtimediv {
+
+        width: 96%;
+
+        padding: 56px 12px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .dateandtimediv {
+
+        width: 96%;
+        padding: 56px 10px;
+    }
+
+    .datetimepicker {
+        flex-wrap: wrap;
+    }
 }
