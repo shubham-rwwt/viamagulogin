@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import './Video.css'
 import ReactPlayer from 'react-player/lazy'
@@ -84,50 +85,46 @@ const Video = () => {
           url={select}
           // width="800px"
           // height="500px"
-          controls
+          // controls
           playing={true}
-          preload={'auto'}
         />
-      </div>
+        <div className="moreVideos">
+          <Swiper
+            spaceBetween={70}
+            grabCursor={true}
+            slidesPerView={5}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            breakpoints={{
+              835: {
+                width: 865,
+                slidesPerView: 3,
+              },
 
-      <p style={{ fontSize: '26px', textAlign: 'center' }}> Select videos </p>
-
-      <div className="moreVideos">
-        <Swiper
-          spaceBetween={70}
-          grabCursor={true}
-          slidesPerView={5}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          breakpoints={{
-            835: {
-              width: 865,
-              slidesPerView: 3,
-            },
-
-            768: {
-              width: 768,
-              slidesPerView: 0,
-            },
-            426: {
-              width: 426,
-              slidesPerView: 4,
-            },
-          }}
-        >
-          {videoData.map((curr) => (
-            <SwiperSlide>
-              <div
-                className="vidcircle"
-                key={curr.id}
-                onClick={() => setSelected(curr.video)}
-              >
-                <img src={curr.thumbnail} alt="" />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              768: {
+                width: 768,
+                slidesPerView: 0,
+              },
+              426: {
+                width: 426,
+                slidesPerView: 4,
+              },
+            }}
+          >
+            {videoData.map((curr) => (
+              <SwiperSlide>
+                <div
+                  className="vidcircle"
+                  key={curr.id}
+                  onClick={() => setSelected(curr.video)}
+                >
+                  <img src={curr.thumbnail} alt="" />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   )
