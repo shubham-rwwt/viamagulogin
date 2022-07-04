@@ -1,7 +1,10 @@
 .video {
+
     background-color: rgb(59, 59, 59);
     height: 100vh;
     color: white;
+
+
 }
 
 .videonav {
@@ -17,23 +20,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     margin-top: 1rem;
     margin-bottom: 1rem;
-
+    position: relative;
 }
 
 .moreVideos {
-    width: 60%;
-    background-color: rgb(90, 90, 90);
-    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    /* margin: auto; */
     margin-top: 20px;
     padding: 10px;
-    opacity: 0.2;
+    opacity: 0;
     transition: 0.4s;
+    /* background-color: rgba(90, 90, 90, 0.299); */
+    position: absolute;
+    top: 60%;
+    z-index: 1;
 }
 
 .moreVideos:hover {
     opacity: 1;
+    background-color: rgba(90, 90, 90, 0.299);
 }
 
 .vidcircle {
