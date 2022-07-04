@@ -87,8 +87,6 @@ nav img {
 }
 
 .inputs {
-
-
     margin: auto;
     margin-top: 25px;
     display: flex;
@@ -115,7 +113,7 @@ nav img {
 }
 
 #child input {
-
+    width: 100%;
     border: 0px;
     border-bottom: 2px solid #E2E8F0;
     opacity: 1;
